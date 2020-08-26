@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(UT3 C)
+project(ut3 C)
 
 find_package(PkgConfig REQUIRED)
 
@@ -14,7 +14,6 @@ add_executable(
 )
 
 target_link_libraries(
-    ut3
-    PUBLIC,
-    PkgConfig:ENET    
+    ut3 PUBLIC
+    PkgConfig::ENET
 )
